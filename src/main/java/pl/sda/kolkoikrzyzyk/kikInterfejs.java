@@ -32,11 +32,13 @@ public class kikInterfejs {
 
 	}
 
-	public void start() {
-
+	public void pokazPlansze(Plansza plansza) {
+		System.out.println(plansza.toString());
 	}
 
-	public void koniec() {
-
+	public void podanoNiepoprawnePole() {
+		System.out.println("Podano niepoprawne pole. Spróbuj jeszcze raz");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
 	}
 }
