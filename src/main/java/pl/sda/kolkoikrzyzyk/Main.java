@@ -30,6 +30,7 @@ public class Main {
 
 			}
 			wstawionyZnak = mapaGraczy.get(aktualnyGracz);
+
 			do {
 				int pozycja = kikInterfejs.podajPole(aktualnyGracz);
 				czyWstawiono = plansza.wstawZnak(wstawionyZnak, pozycja);
@@ -38,7 +39,12 @@ public class Main {
 
 				}
 			} while (!czyWstawiono);
+			if (kikUtil.czyZakonczonoGre(plansza)) {
+				kikInterfejs.wygranoGre(aktualnyGracz);
+				break;
+			}
 		}
+
 		kikInterfejs.pokazPlansze(plansza);
 
 	}
