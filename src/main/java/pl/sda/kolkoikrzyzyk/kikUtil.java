@@ -55,8 +55,9 @@ public class kikUtil { // klasy, które są w jakiś sposób użyteczne
 	}
 
 	public static boolean czyZakonczonoGre(Plansza plansza) {
-
+		
 		return sprawdzWiersze(plansza) || sprawdzKolumny(plansza) || sprawdzPrzekatne(plansza);
 	}
+	
 
 }
